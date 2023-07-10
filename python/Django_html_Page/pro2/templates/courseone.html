@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border:1px;
+            background-color: aqua;
+            padding: 10px;
+            text-align: justify;
+
+        }
+        body{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <br>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter Your Email Id">
+        <br>
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Enter Your Age" min="20" max="30" value="25">
+        <br>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter Your Password">
+        <br>
+        <label>DOB</label>
+        <input type="date" name="dob">
+        <br>
+        <label>Date and Time</label>
+        <input type="datetime-local" name="datetime">
+        <br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <br>
+        <label>Subjects</label>
+        <input type="checkbox" checked name="mern" value="mern">Mern Stack
+        <input type="checkbox" name="mean" value="mean">Mean Stack
+        <input type="checkbox" checked name="python" value="python">Python Full Stack
+        <input type="checkbox" name="php" value="php">Php full Stack
+        <label>State</label>
+        <select name="state">
+            <option value="Haryana">Haryana</option>
+            <option value="UP">UP</option>
+            <option value="Panjab">Panjab</option>
+            <option value="Himachal" selected>Himachal</option>
+            <option value="Maharastra">Maharastra</option>
+        </select>
+        <br>
+        <label>Week</label>
+        <input type="week" name="week">
+        <br>
+        <label>Month</label>
+        <input type="month" name="month">
+        <br>
+        <label>Color</label>
+        <input type="color" name="color">
+        <br>
+        <label>Pictur</label>
+        <input type="file" multiple name="file">
+        <br>
+        <label>Range</label>
+        <input type="range" name="range" min="0" max="100" step="10">
+        <br>
+        <label>Search</label>
+        <input type="search" name="search" placeholder="Search">
+        <br>
+        <label>Telephone</label>
+        <input type="tel" name="tel">
+        <br>
+        <label>URL</label>
+        <input type="url" name="url">
+        <br>
+        <label>Message</label>
+        <textarea name="message" cols="40" rows="10"></textarea>
+        <br>
+        <input type="button" value="Submit">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

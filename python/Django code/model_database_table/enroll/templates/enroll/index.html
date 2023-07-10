@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            td,th{
+                border:1px black solid;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+         <h1>Hello Rahul</h1>
+         {% if stu %}
+          <h1>Show data</h1> 
+          <h3>{{stu}}</h3>
+
+          <table>
+            <tr>
+                <th>ID</th>
+                <th>StuID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        {% for st in stu %}
+          <tr>
+            <td>{{st.id}}</td>
+            <td>{{st.stuid}}</td>
+            <td>{{st.stuname}}</td>
+            <td>{{st.stuemail}}</td>
+            <td>{{st.stupass}}</td>
+            {% comment %} <td>{{stu.id}}</td>
+            <td>{{stu.stuid}}</td>
+            <td>{{stu.stuname}}</td>
+            <td>{{stu.stuemail}}</td>
+            <td>{{stu.stupass}}</td> {% endcomment %}
+          </tr>
+        {% endfor %}
+
+          </table>
+
+         {% else %}
+          <h1>No data</h1>
+         {% endif %}
+    </body>
+</html>

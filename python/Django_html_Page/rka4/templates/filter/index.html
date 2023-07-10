@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+            color:seashell;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>{{nm|capfirst}}</h1> -->
+    <h1>Name : {{cn}} Duration : {{du}} Total Seats : {{st}}</h1>
+    <h1>{{cn|default:'nothing'}}</h1>
+    <h1>{{cn|length}}</h1>
+    <h1>{{du|lower}}</h1>
+    <h1>{{cn|upper}}</h1>
+    <h1>{{st|slice:2}}</h1>
+    <h1>{{cn|truncatechars:4}}</h1>
+    <h1>{{cn|truncatewords:1}}</h1>
+</body>
+</html>
